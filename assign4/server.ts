@@ -1,15 +1,21 @@
-import express,{ type Request, type Response }  from "express"
-import { Errorhandler } from "./middleware";
+import express from "express";
+import router from "./routes/user.routes";
+import { NotFoundError } from "./errors/NotFoundError";
+import { errorHandler } from "./middleware";
 
 const app = express();
 
 app.use(express.json());
+app.use("/api", router);
 
-app.get("/check/:id",Errorhandler,async(req:Request,res:Response)=>{
-    const user = null;
-    if(!user){
-        return;
-    }
-    
-})
-app.listen(3000);
+// 404 fallback
+app.use((_req, _res, next) => {
+  next(new NotFoundError("Route not found"));
+});
+
+// MUST be last
+app.use(errorHandler);
+
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
