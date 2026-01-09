@@ -1,1 +1,4 @@
 # assign_bun
+In thisb  i have completed 5 assignment procided the chatgpt using bun and express most of the time used bun server and in one assignment used express assignment was simple not very tough will be doing more of this it take me two days to complete these five assignement which is too musch i think continous two-four hours is enough time for this will work on speed from now on getting to know bun more seems similar but right know have limitations in comparision to nodejs as some library is not available and also get to know that the bun donot have middleware support by default like node js which make ir tough u need to use express bun server middleware is quite to c0omplex in comparision to node js.
+
+if u can want to know then search i am also searching people are working on bun server middleare tryinmg to solve hope it is done if u feel i am saying something wrong then please check yourself am not a experrt yet in making but peace 🫡✌🏼
