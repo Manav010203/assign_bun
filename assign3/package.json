@@ -1,0 +1,16 @@
+{
+  "name": "assign3",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "uuid": "^13.0.0",
+    "zod": "^4.3.5"
+  }
+}
